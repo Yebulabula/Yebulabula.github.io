@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&amp;display=swap"
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600;700&amp;family=Noto+Serif+SC:wght@500;600&amp;family=Source+Sans+3:wght@400;500;600;700&amp;display=swap"
     rel="stylesheet"
   >
   <link href="./files/wfdoc.css" rel="stylesheet" type="text/css">
@@ -20,10 +20,6 @@
 <body>
   <div class="page-shell">
     <header class="site-header">
-      <a class="site-mark" href="#top">
-        <span class="site-mark-title">Ye Mao</span>
-        <span class="site-mark-subtitle">Computer Vision Researcher</span>
-      </a>
       <nav class="site-nav" aria-label="Primary">
         <a href="#about">About</a>
         <a href="#publications">Publications</a>
@@ -36,7 +32,7 @@
       <section class="hero">
         <div class="hero-copy">
           <!-- <p class="hero-eyebrow">Imperial College London</p> -->
-          <h1>Ye Mao</h1>
+          <h1>Ye Mao <span class="name-native">(毛烨)</span></h1>
           <div class="hero-summary">
             <p class="hero-lead">
               PhD candidate at Imperial College London working on 3D scene understanding, spatial
@@ -79,9 +75,6 @@
         <div class="section-heading">
           <span class="section-kicker">Profile</span>
           <h2>About</h2>
-          <p class="section-intro">
-            Research interests, academic background, and the broader agenda guiding current work.
-          </p>
         </div>
 
         <div class="about-layout">
@@ -111,8 +104,8 @@
             <div class="panel compact-panel">
               <h3>Current Interests</h3>
               <ul class="chip-list">
-                <li>Visual-spatial Intelligence</li>
                 <li>3D scene understanding</li>
+                <li>Visual-spatial Intelligence</li>
                 <li>Vision-language models</li>
                 <li>Representation Learning</li>
               </ul>
@@ -121,9 +114,8 @@
             <div class="panel compact-panel">
               <h3>Research Direction</h3>
               <ul class="plain-list">
-                <li>Bridging geometry and semantics for unified 3D representation learning</li>
-                <li>Learning robust 3D encoders based on point maps</li>
-                <li>Spatial reasoning over real-world, dynamic scenes</li>
+                <li>Spatial reasoning over real-world, dynamic scenes.</li>
+                <li>Developing unified scene-level vision encoders for generalizable 3D understanding.</li>
               </ul>
             </div>
           </div>
@@ -134,13 +126,45 @@
         <div class="section-heading">
           <span class="section-kicker">Research Output</span>
           <h2>Publications</h2>
-          <p class="section-intro">
-            Selected publications spanning 3D scene understanding, stereo matching, multimodal
-            learning, and medical imaging.
-          </p>
         </div>
 
         <div class="publication-grid">
+          <article class="publication-card">
+            <div class="publication-media publication-media-wide">
+              <img class="publication-image-fill" src="./files/eccv_figure1.png" alt="UniScene3D preview" loading="lazy">
+            </div>
+            <div class="publication-body">
+              <div class="publication-meta">
+                <span class="venue">arXiv</span>
+                <span class="year">2026</span>
+              </div>
+              <h3>Contrastive Language-Colored Pointmap Pretraining for Unified 3D Scene Understanding</h3>
+              <p><strong>Ye Mao</strong>, Weixun Luo, Ranran Huang, Junpeng Jing, Krystian Mikolajczyk</p>
+              <p class="pub-links">
+                <a href="https://github.com/Yebulabula/UniScene3D">Code</a>
+                <a href="https://arxiv.org/">Paper</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="publication-card">
+            <div class="publication-media publication-media-narrow">
+              <img class="publication-image-narrow" src="./files/teaser.jpg" alt="NAS3R teaser" loading="lazy">
+            </div>
+            <div class="publication-body">
+              <div class="publication-meta">
+                <span class="venue">CVPR</span>
+                <span class="year">2026</span>
+              </div>
+              <h3>From None to All: Self-Supervised 3D Reconstruction via Novel View Synthesis</h3>
+              <p>Ranran Huang, Weixun Luo, <strong>Ye Mao</strong>, and Krystian Mikolajczyk</p>
+              <p class="pub-links">
+                <a href="https://ranrhuang.github.io/nas3r/">Project Page</a>
+                <a href="https://arxiv.org/abs/2603.27455">Paper</a>
+              </p>
+            </div>
+          </article>
+
           <article class="publication-card">
             <div class="publication-media">
               <img src="./files/fig1.png" alt="Lite Any Stereo overview" loading="lazy">
@@ -341,9 +365,6 @@
         <div class="section-heading">
           <span class="section-kicker">Academic Record</span>
           <h2>Experience</h2>
-          <p class="section-intro">
-            Education, research appointments, teaching, service, and technical strengths.
-          </p>
         </div>
 
         <div class="experience-layout">
@@ -437,12 +458,7 @@
               <h3>Professional Skills</h3>
               <ul class="stack-list">
                 <li>
-                  <strong>Tools</strong>
                   <span>Python, PyTorch, TensorFlow, C++, Java, OpenCV, Git, LaTeX</span>
-                </li>
-                <li>
-                  <strong>Languages</strong>
-                  <span>Mandarin (native), English (fluent)</span>
                 </li>
               </ul>
             </div>
@@ -454,9 +470,6 @@
         <div class="section-heading">
           <span class="section-kicker">Recognition</span>
           <h2>Awards</h2>
-          <p class="section-intro">
-            Scholarships and prizes recognising academic excellence across research and study.
-          </p>
         </div>
 
         <div class="panel awards-panel">
