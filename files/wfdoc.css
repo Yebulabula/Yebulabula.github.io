@@ -3,7 +3,7 @@
   --surface: transparent;
   --surface-muted: rgba(26, 115, 232, 0.04);
   --text: #000000;
-  --text-soft: #000000;
+  --text-soft: #5f6a75;
   --heading: #000000;
   --line: rgba(24, 34, 45, 0.11);
   --line-strong: rgba(24, 34, 45, 0.18);
@@ -475,7 +475,7 @@ ul {
 }
 
 .about-background {
-  color: var(--text-soft);
+  color: var(--text);
   font-size: 0.97rem;
   line-height: 1.62;
 }
@@ -526,7 +526,7 @@ ul {
 .plain-list li {
   position: relative;
   padding-left: 16px;
-  color: var(--text-soft);
+  color: var(--text);
   line-height: 1.5;
 }
 
