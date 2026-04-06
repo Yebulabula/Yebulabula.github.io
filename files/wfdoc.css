@@ -1,4 +1,5 @@
 :root {
+<<<<<<< Updated upstream
   --bg: transparent;
   --surface: transparent;
   --surface-muted: transparent;
@@ -18,6 +19,20 @@
   --radius-md: 14px;
   --radius-sm: 10px;
   --max-width: 1120px;
+=======
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --surface-soft: #fafafa;
+  --text: #1c2128;
+  --muted: #66707b;
+  --line: #e5e7eb;
+  --line-strong: #d6dae1;
+  --link: #184d78;
+  --link-hover: #103b5d;
+  --accent: #7d6241;
+  --shadow: 0 12px 28px rgba(20, 28, 40, 0.05);
+  --max-width: 980px;
+>>>>>>> Stashed changes
 }
 
 *,
@@ -32,9 +47,10 @@ html {
 
 body {
   margin: 0;
-  min-width: 320px;
+  background: var(--bg);
   color: var(--text);
   font-family: "Source Sans 3", sans-serif;
+<<<<<<< Updated upstream
   font-size: 1.03rem;
   line-height: 1.76;
   background: transparent;
@@ -49,11 +65,16 @@ main {
   position: relative;
   z-index: 1;
   animation: fade-up 720ms ease both;
+=======
+  font-size: 1rem;
+  line-height: 1.62;
+>>>>>>> Stashed changes
 }
 
 a {
-  color: var(--accent-strong);
+  color: var(--link);
   text-decoration: none;
+<<<<<<< Updated upstream
   transition:
     color 180ms ease,
     border-color 180ms ease,
@@ -66,6 +87,13 @@ a:hover {
 
 ::selection {
   background: rgba(66, 133, 244, 0.2);
+=======
+}
+
+a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+>>>>>>> Stashed changes
 }
 
 img,
@@ -78,22 +106,31 @@ h1,
 h2,
 h3 {
   margin: 0;
+<<<<<<< Updated upstream
   color: var(--heading);
   font-family: "EB Garamond", serif;
   line-height: 1.12;
   letter-spacing: -0.01em;
   text-wrap: balance;
+=======
+  color: #11151c;
+  font-family: "Lora", serif;
+  font-weight: 600;
+  line-height: 1.22;
+>>>>>>> Stashed changes
 }
 
-p,
-ul {
-  margin: 0;
+h1 {
+  font-size: clamp(2.25rem, 4vw, 3rem);
+  letter-spacing: -0.02em;
 }
 
-p {
-  text-wrap: pretty;
+h2 {
+  margin-bottom: 0.45rem;
+  font-size: clamp(1.8rem, 3vw, 2.25rem);
 }
 
+<<<<<<< Updated upstream
 .page-shell {
   position: relative;
   z-index: 1;
@@ -123,10 +160,38 @@ p {
   bottom: 0;
   height: 1px;
   background: var(--rule-full);
+=======
+h3 {
+  margin-bottom: 0.45rem;
+  font-size: 1.16rem;
 }
 
-.site-nav {
+p,
+ul {
+  margin: 0 0 1rem;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+li {
+  margin-bottom: 0.8rem;
+}
+
+.site {
+  width: min(calc(100% - 48px), var(--max-width));
+  margin: 0 auto;
+  padding: 18px 0 40px;
+>>>>>>> Stashed changes
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
   display: flex;
+<<<<<<< Updated upstream
   flex-wrap: wrap;
   justify-content: center;
   gap: 18px 28px;
@@ -185,10 +250,27 @@ p {
 .hero-aside {
   position: relative;
   z-index: 1;
+=======
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.7rem 0 0.9rem;
+  margin-bottom: 1.15rem;
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(10px);
 }
 
-.hero-copy {
+.site-name {
+  font-family: "Lora", serif;
+  font-size: 1.18rem;
+  color: #11151c;
+>>>>>>> Stashed changes
+}
+
+.top-nav {
   display: flex;
+<<<<<<< Updated upstream
   flex-direction: column;
   justify-content: center;
   max-width: 700px;
@@ -226,26 +308,45 @@ p {
   font-size: 0.74em;
   font-weight: 500;
   letter-spacing: 0.02em;
+=======
+  flex-wrap: wrap;
+  gap: 0.5rem 1.2rem;
 }
 
-.hero-summary {
-  display: grid;
-  gap: 6px;
-  max-width: 39rem;
-  margin-bottom: 16px;
+.top-nav a {
+  color: var(--muted);
+  font-size: 0.94rem;
 }
 
+.top-nav a:hover {
+  color: var(--text);
+>>>>>>> Stashed changes
+}
+
+.content {
+  min-width: 0;
+}
+
+<<<<<<< Updated upstream
 .hero-lead {
   max-width: none;
   margin-bottom: 0;
   color: var(--heading);
   font-size: clamp(1.04rem, 1.55vw, 1.24rem);
   line-height: 1.58;
+=======
+.section {
+  scroll-margin-top: 5rem;
+  padding: 0 0 1.45rem;
+  margin-bottom: 1.45rem;
+  border-bottom: 1px solid var(--line);
+>>>>>>> Stashed changes
 }
 
-.hero-note {
-  max-width: 35rem;
+.section:last-child {
+  border-bottom: 0;
   margin-bottom: 0;
+<<<<<<< Updated upstream
   color: var(--text-soft);
   font-size: 0.98rem;
   line-height: 1.62;
@@ -381,29 +482,40 @@ p {
   border-radius: 50%;
   object-fit: cover;
   object-position: center top;
+=======
+  padding-bottom: 0;
 }
 
-.portrait-note {
-  padding: 0 4px;
-  color: var(--text-soft);
-  font-size: 0.86rem;
-  line-height: 1.52;
+.section-header {
+  margin-bottom: 0.95rem;
 }
 
-.section {
-  padding-top: 52px;
+.section-label {
+  display: inline-block;
+  margin-bottom: 0.3rem;
+  color: var(--accent);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+>>>>>>> Stashed changes
 }
 
-.section-heading {
+.section-intro {
+  max-width: 60ch;
+  color: var(--muted);
+}
+
+.hero {
+  padding-bottom: 1.1rem;
+}
+
+.hero-profile {
   display: grid;
-  gap: 8px;
-  max-width: 860px;
-  margin-bottom: 18px;
-}
-
-.section-kicker {
-  display: inline-flex;
+  grid-template-columns: minmax(0, 1fr) 178px;
+  gap: 1.25rem;
   align-items: center;
+<<<<<<< Updated upstream
   gap: 0;
   color: var(--accent-strong);
   font-size: 0.72rem;
@@ -483,11 +595,30 @@ p {
   margin: 0;
   padding: 0;
   list-style: none;
+=======
 }
 
-.chip-list {
+.hero-copy {
+  min-width: 0;
+}
+
+.hero-role {
+  margin-top: 0.35rem;
+  margin-bottom: 0.65rem;
+  color: #36404b;
+  font-size: 1rem;
+}
+
+.hero-bio {
+  max-width: 62ch;
+  color: var(--text);
+>>>>>>> Stashed changes
+}
+
+.hero-links {
   display: flex;
   flex-wrap: wrap;
+<<<<<<< Updated upstream
   gap: 6px 16px;
 }
 
@@ -509,19 +640,31 @@ p {
 
 .chip-list li:last-child::after {
   display: none;
+=======
+  gap: 0.45rem 0.85rem;
+  margin-top: 0.65rem;
+  margin-bottom: 0;
+>>>>>>> Stashed changes
 }
 
-.plain-list {
-  display: grid;
-  gap: 11px;
+.hero-links a {
+  font-size: 0.94rem;
+  font-weight: 600;
 }
 
-.plain-list li {
-  position: relative;
-  padding-left: 20px;
-  color: var(--text-soft);
+.portrait {
+  width: 100%;
+  aspect-ratio: 1 / 1.14;
+  object-fit: cover;
+  object-position: center 20%;
+  justify-self: end;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
 }
 
+<<<<<<< Updated upstream
 .plain-list li::before {
   content: "";
   position: absolute;
@@ -532,10 +675,17 @@ p {
   border-radius: 50%;
   background: var(--accent);
   transform: translateY(-50%);
+=======
+.intro {
+  max-width: 72ch;
+  margin-top: 0.8rem;
+  color: var(--muted);
+>>>>>>> Stashed changes
 }
 
-.publication-grid {
+.publication {
   display: grid;
+<<<<<<< Updated upstream
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 28px;
 }
@@ -725,11 +875,67 @@ p {
 .education-list span {
   color: var(--heading);
   font-weight: 700;
+=======
+  grid-template-columns: 190px minmax(0, 1fr);
+  gap: 1rem;
+  align-items: center;
+  padding: 0.9rem 0;
+  border-top: 1px solid var(--line);
 }
 
-.education-list em {
-  color: var(--text-soft);
+.publication:first-of-type {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.publication img,
+.publication video {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: contain;
+  object-position: center;
+  padding: 0.45rem;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+  box-shadow: none;
+}
+
+.publication-body h3 {
+  margin-top: 0;
+  margin-bottom: 0.3rem;
+  font-size: 1.06rem;
+  line-height: 1.3;
+}
+
+.publication-body p {
+  margin-bottom: 0.35rem;
+}
+
+.meta {
+  display: inline-block;
+  margin-bottom: 0.4rem;
+  padding: 0.12rem 0.48rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  background: var(--surface-soft);
+}
+
+.links {
+  margin-bottom: 0;
+>>>>>>> Stashed changes
+}
+
+.links a {
+  margin-right: 0.75rem;
+  white-space: nowrap;
+  font-weight: 600;
   font-size: 0.93rem;
+<<<<<<< Updated upstream
   line-height: 1.5;
 }
 
@@ -757,42 +963,33 @@ p {
   color: var(--heading);
   font-size: 0.98rem;
   font-weight: 700;
+=======
+>>>>>>> Stashed changes
 }
 
-.bullet-list strong {
-  display: block;
-  margin-bottom: 4px;
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
 }
 
-.bullet-list span,
-.bullet-list em,
-.stack-list span,
-.stack-list em,
-.award-list span {
-  display: block;
-  color: var(--text-soft);
-  font-style: normal;
+.experience-card {
+  height: 100%;
+  padding: 0.95rem 1rem 0.2rem;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  border-radius: 16px;
 }
 
-.stack-list em,
-.bullet-list em {
-  font-size: 0.93rem;
+.experience-card h3 + ul {
+  margin-bottom: 0.95rem;
 }
 
-.module-list {
-  margin: 6px 0 0;
-  padding-left: 20px;
-  color: var(--text-soft);
-}
-
-.module-list li {
-  margin-bottom: 4px;
-}
-
-.module-list li:last-child {
+.experience-card ul {
   margin-bottom: 0;
 }
 
+<<<<<<< Updated upstream
 .awards-panel {
   background: transparent;
 }
@@ -812,79 +1009,59 @@ p {
   border: none;
   border-radius: 0;
   background: transparent;
+=======
+.experience-card:last-child {
+  grid-column: 1 / -1;
+>>>>>>> Stashed changes
 }
 
-@keyframes fade-up {
-  from {
-    opacity: 0;
-    transform: translateY(18px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.awards-list {
+  max-width: 72ch;
+  padding-left: 0;
+  list-style: none;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-
-  main,
-  a,
-  .panel,
-  .publication-card {
-    animation: none !important;
-    transition: none !important;
-  }
+.awards-list li {
+  margin-bottom: 0.6rem;
+  padding: 0.72rem 0.9rem;
+  border: 1px solid var(--line);
+  border-left: 3px solid #d4c4b0;
+  border-radius: 0 12px 12px 0;
+  background: var(--surface);
 }
 
-@media (max-width: 1080px) {
-  .hero,
-  .about-layout,
-  .experience-layout {
-    grid-template-columns: 1fr;
+@media (max-width: 860px) {
+  .hero-profile {
+    grid-template-columns: minmax(0, 1fr) 160px;
   }
 
-  .hero-copy {
-    max-width: none;
-  }
-
-  .hero-facts-inline,
-  .award-list {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .hero-facts-inline {
-    grid-template-columns: minmax(220px, 0.78fr) minmax(0, 1.42fr);
-    grid-template-areas: "affiliation focus";
-  }
-
+<<<<<<< Updated upstream
   .portrait-card img {
     min-height: 0;
+=======
+  .publication {
+    grid-template-columns: 156px minmax(0, 1fr);
+>>>>>>> Stashed changes
   }
-}
 
-@media (max-width: 920px) {
-  .publication-grid {
+  .info-grid {
     grid-template-columns: 1fr;
   }
 
+<<<<<<< Updated upstream
   .site-header {
     border-radius: 0;
+=======
+  .experience-card:last-child {
+    grid-column: auto;
+>>>>>>> Stashed changes
   }
 }
 
-@media (max-width: 720px) {
-  .page-shell {
-    width: min(calc(100% - 22px), var(--max-width));
-    padding-top: 12px;
-    padding-bottom: 36px;
-  }
-
-  .site-header {
+@media (max-width: 700px) {
+  .topbar {
     position: static;
+<<<<<<< Updated upstream
     align-items: center;
     padding: 12px 0 16px;
   }
@@ -918,17 +1095,24 @@ p {
     grid-template-areas:
       "affiliation"
       "focus";
+=======
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.55rem;
+>>>>>>> Stashed changes
   }
 
-  .hero-facts-inline .fact-block {
+  .hero-profile,
+  .publication {
     grid-template-columns: 1fr;
-    row-gap: 8px;
   }
 
-  .fact-block-focus strong {
-    white-space: normal;
+  .portrait {
+    max-width: 170px;
+    justify-self: start;
   }
 
+<<<<<<< Updated upstream
   .fact-block {
     padding: 14px 0 0;
   }
@@ -944,8 +1128,15 @@ p {
   .panel,
   .publication-body {
     padding: 16px 0 0;
+=======
+  .publication img,
+  .publication video {
+    max-width: 320px;
+>>>>>>> Stashed changes
   }
+}
 
+<<<<<<< Updated upstream
   .publication-media {
     height: 188px;
     min-height: 188px;
@@ -963,5 +1154,15 @@ p {
 
   .publication-image-narrow {
     transform: scale(0.96);
+=======
+@media (max-width: 640px) {
+  body {
+    font-size: 1rem;
+  }
+
+  .site {
+    width: min(calc(100% - 28px), var(--max-width));
+    padding-top: 16px;
+>>>>>>> Stashed changes
   }
 }
