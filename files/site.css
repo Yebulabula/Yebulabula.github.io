@@ -903,6 +903,33 @@ ul {
   line-height: 1.5;
 }
 
+.site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4px 8px;
+  margin-top: 34px;
+  padding: 20px 0 30px;
+  border-top: 1px solid var(--line);
+  color: var(--text-soft);
+  font-size: 0.82rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.footer-globe {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+.footer-separator {
+  color: var(--line-strong);
+}
+
 @media (max-width: 960px) {
   .hero {
     grid-template-columns: minmax(0, 1fr);
