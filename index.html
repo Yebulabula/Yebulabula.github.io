@@ -29,24 +29,30 @@
     </header>
 
     <main id="top">
-      <section class="hero">
+      <section class="hero" id="about">
         <div class="hero-copy">
           <!-- <p class="hero-eyebrow">Imperial College London</p> -->
-          <h1>Ye Mao <span class="name-native">(毛烨)</span></h1>
+          <h1>Ye Mao <span class="name-native"></span></h1>
           <div class="hero-summary">
             <p class="hero-lead">
-              PhD candidate at Imperial College London working on 3D scene understanding, spatial
-              intelligence, and multimodal large language models.
-            </p>
-            <p class="hero-note">
-              Building generalizable 3D perception systems that bridge geometry, semantics, and
-              open-world reasoning across real-world environments.
+              I am a final-year PhD candidate in Computer Vision and Machine Learning at
+              <a href="https://www.imperial.ac.uk/">Imperial College London</a>, supervised by
+              Prof. <a href="https://www.imperial.ac.uk/people/k.mikolajczyk">Krystian Mikolajczyk</a>
+              and supported by the
+              <a href="https://www.imperial.ac.uk/study/fees-and-funding/postgraduate-doctoral/grants-scholarships/presidents-phd/">
+                Imperial President's Scholarship
+              </a>.
+              I am currently a research intern at Meta, working on world foundation models for
+              robot learning. My research develops generalizable geometry-aware models for
+              understanding, reconstructing, and generating the 3D physical world. Before my PhD,
+              I completed master's degrees at the University of Cambridge and Imperial, and a bachelor's degree at King's College London, where I first started
+              programming.
             </p>
           </div>
 
           <div class="hero-links">
             <a class="button" href="mailto:ye.mao21@imperial.ac.uk">Email</a>
-            <a class="button" href="./files/YeMao_CV.pdf">CV</a>
+            <a class="button" href="./files/YeMao_CV_08.pdf">CV</a>
             <a class="button" href="https://scholar.google.com/citations?user=BaFsw-4AAAAJ&amp;hl=en">Google Scholar</a>
             <a class="button" href="https://github.com/Yebulabula">GitHub</a>
             <a class="button" href="https://www.linkedin.com/in/ye-mao-92b02b269/">LinkedIn</a>
@@ -58,70 +64,24 @@
               <strong>Imperial College London</strong>
             </div>
             <div class="fact-block fact-block-focus">
-              <span class="fact-label">Focus</span>
-              <strong>3D scene understanding, Spatial Intelligence, VLMs</strong>
+              <span class="fact-label">Research</span>
+              <strong>3D Computer Vision, World Model, Physical AI</strong>
             </div>
           </div>
         </div>
 
         <aside class="hero-aside">
           <div class="portrait-card">
-            <img src="./files/Ye_profile.jpeg" alt="Portrait of Ye Mao">
+            <img src="./files/Ye_profile.PNG" alt="Portrait of Ye Mao">
           </div>
         </aside>
       </section>
 
-      <section class="section" id="about">
-        <div class="section-heading">
-          <span class="section-kicker">Profile</span>
-          <h2>About</h2>
-        </div>
-
-          <div class="about-layout">
-            <div class="panel about-panel">
-              <p class="about-intro">
-                I am a PhD candidate in Computer Vision and Machine Learning at
-                <a href="https://www.imperial.ac.uk/matchlab/">MatchLab</a>,
-                <a href="https://www.imperial.ac.uk/">Imperial College London</a>, supervised by
-                Prof. <a href="https://www.imperial.ac.uk/people/k.mikolajczyk">Krystian Mikolajczyk</a>
-                and supported by the
-                <a href="https://www.imperial.ac.uk/study/fees-and-funding/postgraduate-doctoral/grants-scholarships/presidents-phd/">
-                  Imperial President's Scholarship
-                </a>.
-                My research focuses on developing generalizable spatial intelligence models that can represent and reason about real-world indoor environments, while transferring effectively across a wide range of 3D tasks.
-              </p>
-              <p class="about-background">
-                Before starting my PhD, I completed an MPhil in Medical Sciences at the
-                <a href="https://www.cam.ac.uk/">University of Cambridge</a> and an MSc in Applied
-                Machine Learning at <a href="https://www.imperial.ac.uk/">Imperial College London</a>.
-                I previously studied Computer Science and Robotics at <a href="https://www.kcl.ac.uk/">King's College London</a>.
-              </p>
-            </div>
-
-            <div class="about-side">
-              <div class="panel compact-panel">
-                <h3>Current Interests</h3>
-                <ul class="chip-list">
-                  <li>3D scene understanding / Visual-spatial Intelligence</li>
-                  <li>Vision-language models / Representation Learning</li>
-                </ul>
-              </div>
-
-              <div class="panel compact-panel">
-                <h3>Research Direction</h3>
-                <ul class="plain-list">
-                  <li>Spatial reasoning over real-world, dynamic scenes.</li>
-                  <li>Developing unified scene-level vision encoders for generalizable 3D understanding.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-      </section>
-
       <section class="section" id="publications">
         <div class="section-heading">
-          <span class="section-kicker">Research Output</span>
+          <span class="section-kicker">Selected Research</span>
           <h2>Publications</h2>
+          <p class="publication-legend"><sup>*</sup> Equal contribution; <sup>&dagger;</sup> Corresponding author.</p>
         </div>
 
         <div class="publication-grid">
@@ -131,16 +91,30 @@
             </div>
             <div class="publication-body">
               <div class="publication-meta">
-                <span class="venue">arXiv</span>
+                <span class="venue">ECCV</span>
                 <span class="year">2026</span>
               </div>
-              <h3>Contrastive Language-Colored Pointmap Pretraining for Unified 3D Scene Understanding</h3>
+              <h3>RGB-Pointmap Pretraining for Unified 3D Scene Understanding</h3>
               <p><strong>Ye Mao</strong>, Weixun Luo, Ranran Huang, Junpeng Jing, Krystian Mikolajczyk</p>
               <p class="pub-links">
                 <a href="https://yebulabula.github.io/UniScene3D/">Project Page</a>
                 <a href="http://arxiv.org/abs/2604.02546">Paper</a>
                 <a href="https://github.com/Yebulabula/UniScene3D">Code</a>
               </p>
+            </div>
+          </article>
+
+          <article class="publication-card">
+            <div class="publication-media">
+              <img src="./files/BiDAVideo.png" alt="Match Stereo Videos preview" loading="lazy">
+            </div>
+            <div class="publication-body">
+              <div class="publication-meta">
+                <span class="venue">TPAMI</span>
+                <span class="year">2026</span>
+              </div>
+              <h3>Match Stereo Videos via Bidirectional Alignment</h3>
+              <p>Junpeng Jing, <strong>Ye Mao<sup>&dagger;</sup></strong>, Anlan Qiu, and Krystian Mikolajczyk</p>
             </div>
           </article>
 
@@ -172,7 +146,7 @@
                 <span class="year">2026</span>
               </div>
               <h3>Lite Any Stereo: Efficient Zero-Shot Stereo Matching</h3>
-              <p>Junpeng Jing, Weixun Luo, <strong>Ye Mao</strong>, and Krystian Mikolajczyk</p>
+              <p>Junpeng Jing, Weixun Luo, <strong>Ye Mao<sup>&dagger;</sup></strong>, and Krystian Mikolajczyk</p>
               <p class="pub-links">
                 <a href="https://tomtomtommi.github.io/LiteAnyStereo/">Project Page</a>
                 <a href="https://arxiv.org/abs/2511.16555">Paper</a>
@@ -234,7 +208,7 @@
                 <span class="year">2025</span>
               </div>
               <h3>Stereo Any Video: temporally consistent stereo matching</h3>
-              <p>Junpeng Jing, Weixun Luo, <strong>Ye Mao</strong>, and Krystian Mikolajczyk</p>
+              <p>Junpeng Jing, Weixun Luo, <strong>Ye Mao<sup>&dagger;</sup></strong>, and Krystian Mikolajczyk</p>
               <p class="pub-links">
                 <a href="https://tomtomtommi.github.io/StereoAnyVideo/">Project Page</a>
                 <a href="https://arxiv.org/abs/2503.05549">Paper</a>
@@ -292,7 +266,7 @@
                 <span class="year">2024</span>
               </div>
               <h3>Match-Stereo-Videos: Bidirectional Alignment for Consistent Dynamic Stereo Matching</h3>
-              <p>Junpeng Jing, <strong>Ye Mao</strong>, and Krystian Mikolajczyk</p>
+              <p>Junpeng Jing, <strong>Ye Mao<sup>&dagger;</sup></strong>, and Krystian Mikolajczyk</p>
               <p class="pub-links">
                 <a href="https://tomtomtommi.github.io/BiDAStereo/">Project Page</a>
                 <a href="https://arxiv.org/abs/2403.10755">Paper</a>
@@ -311,7 +285,7 @@
                 <span class="year">2023</span>
               </div>
               <h3>DisC-Diff: Disentangled Conditional Diffusion Model for Multi-Contrast MRI Super-Resolution</h3>
-              <p><strong>Ye Mao</strong>, Lan Jiang, Xi Chen, and Chao Li</p>
+              <p><strong>Ye Mao<sup>*</sup></strong>, Lan Jiang<sup>*</sup>, Xi Chen, and Chao Li</p>
               <p class="pub-links">
                 <a href="https://github.com/Yebulabula/DisC-Diff/">Project Page</a>
                 <a href="https://link.springer.com/chapter/10.1007/978-3-031-43999-5_37">Paper</a>
@@ -330,7 +304,7 @@
                 <span class="year">2023</span>
               </div>
               <h3>CoLa-Diff: Conditional Latent Diffusion Model for Multi-Modal MRI Synthesis</h3>
-              <p>Lan Jiang, <strong>Ye Mao</strong>, Xi Chen, and Chao Li</p>
+              <p>Lan Jiang<sup>*</sup>, <strong>Ye Mao<sup>*</sup></strong>, Xi Chen, and Chao Li</p>
               <p class="pub-links">
                 <a href="https://github.com/SeeMeInCrown/CoLa_Diff_MultiModal_MRI_Synthesis">Project Page</a>
                 <a href="https://link.springer.com/chapter/10.1007/978-3-031-43999-5_38">Paper</a>
@@ -368,43 +342,59 @@
           <div class="experience-column">
             <div class="panel education-panel">
               <h3>Education</h3>
-              <ul class="stack-list education-list">
+              <ul class="cv-list education-list">
                 <li>
-                  <strong>PhD (Probationary) in Computer Vision and Machine Learning</strong>
-                  <span>Imperial College London, 2023-present</span>
+                  <div class="cv-item-head">
+                    <strong>PhD in Computer Vision and Machine Learning</strong>
+                    <span class="cv-date">2023-present</span>
+                  </div>
+                  <span class="cv-detail">Imperial College London</span>
                 </li>
                 <li>
-                  <strong>MPhil in Medical Sciences</strong>
-                  <span>University of Cambridge, 2022-2023</span>
-                  <em>Thesis: Brain MRI Super-Resolution using Conditional Diffusion Model</em>
+                  <div class="cv-item-head">
+                    <strong>MPhil in Medical Sciences</strong>
+                    <span class="cv-date">2022-2023</span>
+                  </div>
+                  <span class="cv-detail">University of Cambridge</span>
+                  <em class="cv-note">Thesis: Brain MRI Super-Resolution using Conditional Diffusion Model</em>
                 </li>
                 <li>
-                  <strong>MSc in Applied Machine Learning</strong>
-                  <span>Imperial College London, 2021-2022</span>
-                  <em>First Class Honours, top overall grade: 81%; thesis grade: 87%</em>
-                  <em>Thesis: Domain Adaptation for Digital PCR Multiplexing</em>
+                  <div class="cv-item-head">
+                    <strong>MSc in Applied Machine Learning</strong>
+                    <span class="cv-date">2021-2022</span>
+                  </div>
+                  <span class="cv-detail">Imperial College London</span>
+                  <em class="cv-note">First Class Honours, top overall grade: 81%; thesis grade: 87%</em>
+                  <em class="cv-note">Thesis: Domain Adaptation for Digital PCR Multiplexing</em>
                 </li>
                 <li>
-                  <strong>BSc in Computer Science</strong>
-                  <span>King's College London, 2018-2021</span>
-                  <em>First Class Honours, top overall grade: 82%; thesis grade: 81%</em>
-                  <em>Thesis: String Sanitisation Algorithm Development</em>
+                  <div class="cv-item-head">
+                    <strong>BSc in Computer Science</strong>
+                    <span class="cv-date">2018-2021</span>
+                  </div>
+                  <span class="cv-detail">King's College London</span>
+                  <em class="cv-note">First Class Honours, top overall grade: 82%; thesis grade: 81%</em>
+                  <em class="cv-note">Thesis: String Sanitisation Algorithm Development</em>
                 </li>
               </ul>
             </div>
 
             <div class="panel">
               <h3>Research Experience</h3>
-              <ul class="bullet-list">
+              <ul class="cv-list">
                 <li>
-                  <strong>Research Assistant</strong>
-                  <span>Centre for Antimicrobial Optimisation Lab</span>
-                  <em>Imperial College London, 2024-2025</em>
+                  <div class="cv-item-head">
+                    <strong>Research Assistant</strong>
+                    <span class="cv-date">2024-2025</span>
+                  </div>
+                  <span class="cv-detail">Centre for Antimicrobial Optimisation Lab, Imperial College London</span>
                 </li>
                 <li>
-                  <strong>Research Assistant</strong>
-                  <span>Cambridge Brain Tumour Imaging Lab</span>
-                  <em>University of Cambridge, January 2023-September 2023</em>
+                  <div class="cv-item-head">
+                    <strong>Research Assistant</strong>
+                    <span class="cv-date">Jan 2023-Sep 2023</span>
+                  </div>
+                  <span class="cv-detail">Cambridge Brain Tumour Imaging Lab, University of Cambridge</span>
                 </li>
               </ul>
             </div>
@@ -413,18 +403,24 @@
           <div class="experience-column">
             <div class="panel">
               <h3>Teaching</h3>
-              <ul class="stack-list">
+              <ul class="cv-list">
                 <li>
-                  <strong>Graduate Teaching Assistant</strong>
-                  <span>Imperial College London, 2024-present</span>
+                  <div class="cv-item-head">
+                    <strong>Graduate Teaching Assistant</strong>
+                    <span class="cv-date">2024-present</span>
+                  </div>
+                  <span class="cv-detail">Imperial College London</span>
                   <ul class="module-list">
                     <li>Deep Learning (ELEC60009)</li>
                     <li>Computer Vision and Pattern Recognition (ELEC70073)</li>
                   </ul>
                 </li>
                 <li>
-                  <strong>Undergraduate Teaching Assistant</strong>
-                  <span>King's College London, 2021</span>
+                  <div class="cv-item-head">
+                    <strong>Undergraduate Teaching Assistant</strong>
+                    <span class="cv-date">2021</span>
+                  </div>
+                  <span class="cv-detail">King's College London</span>
                   <ul class="module-list">
                     <li>Foundation of Computing</li>
                     <li>Robotics Group Project</li>
@@ -435,10 +431,10 @@
 
             <div class="panel">
               <h3>Academic Service</h3>
-              <ul class="stack-list">
+              <ul class="cv-list service-list">
                 <li>
                   <strong>Computer Vision</strong>
-                  <span>CVPR (2025-2026), ECCV (2024, 2026), ICCV (2025)</span>
+                  <span>CVPR (2025-2026), ECCV (2024, 2026), ICCV (2025), TPAMI</span>
                 </li>
                 <li>
                   <strong>Machine Learning</strong>
@@ -453,9 +449,9 @@
 
             <div class="panel">
               <h3>Professional Skills</h3>
-              <ul class="stack-list">
+              <ul class="cv-list skills-list">
                 <li>
-                  <span>Python, PyTorch, TensorFlow, C++, Java, OpenCV, Git, LaTeX</span>
+                  <span class="skills-line">Python, PyTorch, TensorFlow, C++, Java, OpenCV, Git, LaTeX</span>
                 </li>
               </ul>
             </div>
@@ -472,29 +468,46 @@
         <div class="panel awards-panel">
           <ul class="award-list">
             <li>
-              <strong>Imperial President’s PhD Scholarship</strong>
-              <span>Among the top 50 selected college-wide, 2023</span>
+              <span class="award-year">2023</span>
+              <div class="award-detail">
+                <strong>Imperial President’s PhD Scholarship</strong>
+                <span>Among the top 50 selected college-wide</span>
+              </div>
             </li>
             <li>
-              <strong>The Humanitarian Trust</strong>
-              <span>GBP 1,000 funding to support MPhil study in Clinical Neuroscience</span>
+              <span class="award-year">2023</span>
+              <div class="award-detail">
+                <strong>The Humanitarian Trust</strong>
+                <span>GBP 1,000 funding to support MPhil study in Clinical Neuroscience</span>
+              </div>
             </li>
             <li>
-              <strong>Applied Machine Learning Prize</strong>
-              <span>Highest overall grade in MSc Applied Machine Learning, 2022</span>
-            </li>
-            
-            <li>
-              <strong>Hertha Ayrton Centenary Prize</strong>
-              <span>Highest final-year project grade in the Imperial EEE department, 2022</span>
+              <span class="award-year">2022</span>
+              <div class="award-detail">
+                <strong>Applied Machine Learning Prize</strong>
+                <span>Highest overall grade in MSc Applied Machine Learning</span>
+              </div>
             </li>
             <li>
-              <strong>Robotics Prize</strong>
-              <span>Highest overall grade in BSc Computer Science and Robotics, 2021</span>
+              <span class="award-year">2022</span>
+              <div class="award-detail">
+                <strong>Hertha Ayrton Centenary Prize</strong>
+                <span>Highest final-year project grade in the Imperial EEE department</span>
+              </div>
             </li>
             <li>
-              <strong>Peplow Prize</strong>
-              <span>Highest final-year project grade in King's Informatics department, 2021</span>
+              <span class="award-year">2021</span>
+              <div class="award-detail">
+                <strong>Robotics Prize</strong>
+                <span>Highest overall grade in BSc Computer Science and Robotics</span>
+              </div>
+            </li>
+            <li>
+              <span class="award-year">2021</span>
+              <div class="award-detail">
+                <strong>Peplow Prize</strong>
+                <span>Highest final-year project grade in King's Informatics department</span>
+              </div>
             </li>
           </ul>
         </div>
